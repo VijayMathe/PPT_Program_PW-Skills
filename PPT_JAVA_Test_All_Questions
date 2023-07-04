@@ -1,0 +1,102 @@
+Q1
+1. Write a Java program to check whether a given number is positive, negative, or zero using an if-else statement.
+
+Ans:
+
+public static void main(String[] args) {
+    int n = 5;
+
+    if (n < 0) {
+        System.out.println("The number is negative");
+    } else if (n == 0) {
+        System.out.println("The number is equal to zero");
+    } else {
+        System.out.println("The number is positive");
+    }
+}
+
+
+
+Q2
+2. Write a Java program to print the Fibonacci series up to a given number using a for loop.
+Ans:
+
+public static void main(String[] args) {
+    int n = 50;
+
+    int num1 = 0;
+    int num2 = 1;
+
+    System.out.println("Here is the Fibonacci series:");
+
+    System.out.print(num1 + " " + num2 + " ");
+    for (int i = 2; i < n; i++) {
+        int nextNum = num1 + num2;
+        System.out.print(nextNum + " ");
+        num1 = num2;
+        num2 = nextNum;
+    }
+}
+
+
+
+Q3
+3. Write a Java program to calculate the average of a list of numbers using a do-while loop.
+Ans:
+
+public static void main(String[] args) {
+    int[] arr = {4, 5, 8, 9, 3, 2, 6};
+
+    int i = 0;
+
+    do{
+      sum += arr[i];
+      i++;
+    }while(i < arr.length - 1)
+
+    System.out.println("Here is the average : " + sum/arr.length);
+}
+
+
+
+Q4
+4. Write a Java program to find the largest of three numbers using nested if-else statements.
+Ans:
+
+public static void main(String[] args) {
+    int num1 = 10;
+    int num2 = 20;
+    int num3 = 15;
+
+    if (num1 >= num2) {
+        if (num1 >= num3) {
+            System.out.println(num1 + " is the largest number.");
+        } else {
+            System.out.println(num3 + " is the largest number.");
+        }
+    } else {
+        if (num2 >= num3) {
+            System.out.println(num2 + " is the largest number.");
+        } else {
+            System.out.println(num3 + " is the largest number.");
+        }
+    }
+}
+
+
+
+Q5
+5. Write a Java program to declare and initialize variables of different data types (int, double, String) with appropriate identifiers.
+Ans:
+
+
+public static void main(String[] args) {
+    int Int = 10;
+    double Double = 3.14;
+    String string = "Vijay Mathe";
+
+    System.out.println("Integer value: " + Int);
+    System.out.println("Double value: " + Double);
+    System.out.println("String value: " + string);
+}
+
