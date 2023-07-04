@@ -1,0 +1,10 @@
+numbers = [2, 8, 6, 3, 4]
+
+def calculate_mean(numbers):
+    total = sum(numbers)
+    count = len(numbers)
+    mean = total / count
+    return mean
+
+val = calculate_mean(numbers)
+print(val)
