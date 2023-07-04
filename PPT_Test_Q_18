@@ -1,0 +1,17 @@
+import time
+
+def timer(func):
+    def wrapper():
+        start_time = time.time()
+        func()
+        end_time = time.time()
+        execution_time = end_time - start_time
+        print("Execution time: {:.5f} seconds".format(execution_time))
+    return wrapper
+
+@timer
+def my_function():
+    # Function code goes here
+    time.sleep(2)
+
+my_function()
